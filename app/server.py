@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1-SDcLFYD7ux33UORy3P47PdwXlepqdV8'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1OyPgh0t2M-HDSNyIPda7I7fU6JDbTL6K'
 export_file_name = 'export.pkl'
 
 classes = ['1 to 5', '6 to 10', '11 to 15','16 to 20','21 to 25','26 to 30','31 to 40','41 to 50','51 to 60','61 and Above']
