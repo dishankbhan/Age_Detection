@@ -9,7 +9,7 @@ The idea was nothing very serious. Often age is considered to be a very sensitiv
 
 ## Data Set
 UTKFace dataset is a large-scale face dataset with long age span (range from 0 to 116 years old). The dataset consists of over 20,000 face images with annotations of age, gender, and ethnicity. The images cover large variation in pose, facial expression, illumination, occlusion, resolution, etc. This dataset could be used on a variety of tasks, e.g., face detection, age estimation, age progression/regression, landmark localization, etc. 
-<insert logo of UTKFace>
+![](Images/logoWall2.jpg)
 
 ## Approach
 We tried and tested different things to approach the problem. 
@@ -22,7 +22,7 @@ We segmented our data into age groups of 10 each respectively, starting from 0-1
 
 ## Training the Model
 We used the UTKFace Dataset. The individual age images were aggregated into age groups as mentioned above. Below is the snapshot of a sample training images. 
-<Insert sample training images>
+![](Images/samples.png)
 
 We used different model architectures and performed transfer learning to use them for our use case. Below are performances of different model architectures: 
 
@@ -36,17 +36,24 @@ We used different model architectures and performed transfer learning to use the
 
 We found that Resnet50 has the best validation accuracy and also was not overfitting too much with the training dataset. 
 
-Below is the performance of the model: 
-<Insert model performance image>
-
+Below is the performance of the Resnet50 model: 
+![](Images/Loss.PNG)
 
 ## Results
 
-Below are certain results from testing out the model 
+Below are certain good results from testing out the model 
 
-<Trump Image>    <Trudeau Image>
+![](Images/trump_result.PNG)    
 
-<Kid Image>      <Michelle Image>
+![](Images/Trudeau_Result.PNG)    
+
+![](Images/Kid_Result.PNG) 
+
+But we also have certain even better results. 
+
+![](Images/Michelle_Result.PNG) 
+
+![](Images/Kam_Result.PNG) 
   
 The model has been deployed live on Render. However, since its a free account, please use image with smaller sizes, as their is a limit on computation allowed for free accounts. Preferably use images with your head covering major part of the image. 
 
